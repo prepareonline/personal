@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/app_home_order_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Now" />
+
+        <Button
+            android:id="@+id/app_home_pay_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now" />
+
+        <Button
+            android:id="@+id/app_home_pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Success" />
+
+        <Button
+            android:id="@+id/app_home_add_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Tip" />
+
+        <Button
+            android:id="@+id/app_home_acc_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Settings" />
+
+        <Button
+            android:id="@+id/app_home_my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile" />
+    </LinearLayout>
+
+</RelativeLayout>

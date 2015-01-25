@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/rbash_title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/owner_violet_bkgrnd_dark" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <ImageButton
+                        android:id="@+id/ibutton_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/ic_back_button" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customers"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2,3,4" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:showDividers="middle" >
+
+                    <TextView
+                        android:id="@+id/cla_table_header_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/owner_orange_dark"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:padding="2dp"
+                        android:text="Customer"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cla_table_header_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/owner_orange_dark"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:padding="2dp"
+                        android:text="Email"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cla_table_header_spent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/owner_orange_dark"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:padding="2dp"
+                        android:text="Total\nSpent($)"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cla_table_header_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/owner_orange_dark"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:padding="2dp"
+                        android:text="Total\nOrders"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cla_table_header_avg_purchase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@color/owner_orange_dark"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:padding="2dp"
+                        android:text="Average\nPurchase"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/rbash_footer" />
+    </LinearLayout>
+
+</RelativeLayout>

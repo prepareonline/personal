@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_header_restaurant_details">Restaurant Details</string>
+    <string name="home_header_finest_local_deals">The Finest Local Deals</string>
+    <string name="home_header__menu_title">Menu</string>
+    <string-array name="menu_items">
+        <item >Online Orders</item>
+        <item >Customers</item>
+    </string-array>
+    <string-array name="app_menu_items">
+        <item >Login</item>
+        <item >Cancel This Order</item>
+        <item >Current Order</item>
+        <item >Settings</item>
+    </string-array>
+</resources>
