@@ -15,5 +15,10 @@
     <string name="title_activity_home_app">HomeAppActivity</string>
     <string name="title_activity_my_profile">MyProfileActivity</string>
     <string name="title_activity_account_settings">AccountSettingsActivity</string>
+    <string name="title_activity_login_app">LoginAppActivity</string>
+    <string name="title_activity_your_order">YourOrderActivity</string>
+    <string name="title_activity_dish_details">DishDetailsActivity</string>
+    <string name="title_activity_my_orders">MyOrdersActivity</string>
+    <string name="title_activity_user_home">UserHomeActivity</string>
 
 </resources>

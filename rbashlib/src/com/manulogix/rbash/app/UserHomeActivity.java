@@ -21,22 +21,24 @@ import com.manulogix.rbash.dto.DeviceDetails;
 import com.manulogix.rbash.dto.LoginRequest;
 import com.manulogix.rbash.owner.MainLayout;
 
-public class MainActivity extends FragmentActivity {
+public class UserHomeActivity extends FragmentActivity {
 
 	MainLayout mLayout;
 	private ListView lvMenu;
 	private String[] lvMenuItems;
 	ImageButton btMenu;
 	TextView tvTitle;
-	private MainActivity thisActivity;
+	private UserHomeActivity thisActivity;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mLayout = (MainLayout) this.getLayoutInflater().inflate(
-				R.layout.activity_app_choose_items, null);
+				R.layout.activity_user_home, null);
 		setContentView(mLayout);
-		thisActivity=this;
-		lvMenuItems = getResources().getStringArray(R.array.app_menu_items);
+		thisActivity = this;
+		lvMenuItems = getResources()
+				.getStringArray(R.array.app_home_menu_items);
 		lvMenu = (ListView) findViewById(R.id.menu_listview);
 		lvMenu.setAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, lvMenuItems));
@@ -60,9 +62,9 @@ public class MainActivity extends FragmentActivity {
 
 		tvTitle = (TextView) findViewById(R.id.activity_main_content_title);
 
-		FragmentManager fm = MainActivity.this.getSupportFragmentManager();
+		FragmentManager fm = thisActivity.getSupportFragmentManager();
 		FragmentTransaction ft = fm.beginTransaction();
-		ChooseItemsFragment fragment = new ChooseItemsFragment();
+		UserHomeMainFragment fragment = new UserHomeMainFragment();
 		ft.add(R.id.activity_main_content_fragment, fragment);
 		ft.commit();
 
@@ -113,21 +115,16 @@ public class MainActivity extends FragmentActivity {
 			return;
 		}
 
-		FragmentManager fm = MainActivity.this.getSupportFragmentManager();
+		FragmentManager fm = thisActivity.getSupportFragmentManager();
 		FragmentTransaction ft = fm.beginTransaction();
 		Fragment fragment = null;
 
 		if (selectedItem.compareTo("Login") == 0) {
-			//Intent intent = new Intent(MainActivity.this,OrdersListActivity.class);
-			//startActivity(intent);
-		} else if (selectedItem.compareTo("Cancel This Order") == 0) {
-			//Intent intent = new Intent(MainActivity.this,CustomersListActivity.class);
-			//startActivity(intent);
-		}else if (selectedItem.contains("Current Order")) {
-			//Intent intent = new Intent(MainActivity.this,CustomersListActivity.class);
-			//startActivity(intent);
-		}else if (selectedItem.compareTo("Settings") == 0) {
-			Intent intent = new Intent(MainActivity.this,AccountSettingsActivity.class);
+			Intent intent = new Intent(thisActivity, LoginAppActivity.class);
+			startActivity(intent);
+		} else if (selectedItem.compareTo("Settings") == 0) {
+			Intent intent = new Intent(thisActivity,
+					AccountSettingsActivity.class);
 			startActivity(intent);
 		}
 

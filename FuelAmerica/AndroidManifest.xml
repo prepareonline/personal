@@ -24,6 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name="com.manulogix.rbash.app.DialogShowActivity" />
+        <activity android:name="com.manulogix.rbash.app.UserHomeActivity" />
+        <activity android:name="com.manulogix.rbash.app.DishDetailsActivity" />
+        <activity android:name="com.manulogix.rbash.app.LoginAppActivity" />
+        <activity android:name="com.manulogix.rbash.app.ChooseItemsActivity" />
+        <activity android:name="com.manulogix.rbash.app.MyOrdersActivity" />
+        <activity android:name="com.manulogix.rbash.app.YourOrderActivity" />
         <activity android:name="com.manulogix.rbash.app.MyProfileActivity" />
         <activity android:name="com.manulogix.rbash.app.AccountSettingsActivity" />
     </application>

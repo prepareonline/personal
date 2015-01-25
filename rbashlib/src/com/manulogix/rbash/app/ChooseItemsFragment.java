@@ -17,7 +17,7 @@ public class ChooseItemsFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_layout1, null);
+		View view = inflater.inflate(R.layout.fragment_choose_items_list, null);
 
 		onlineOrders = (Button) view.findViewById(R.id.rdetails_online_orders);
 
@@ -25,7 +25,7 @@ public class ChooseItemsFragment extends Fragment {
 
 			@Override
 			public void onClick(View v) {
-				
+
 			}
 		});
 		return view;

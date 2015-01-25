@@ -45,7 +45,7 @@ public class WelcomeScreenActivity extends Activity {
 
 	private void startHomeScreen() {
 		Intent intent = new Intent(getApplicationContext(),
-				DialogShowActivity.class);
+				UserHomeActivity.class);
 		startActivity(intent);
 		thisActivity.finish();
 	}
