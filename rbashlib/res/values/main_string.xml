@@ -14,6 +14,7 @@
         <item>Cancel This Order</item>
         <item>Current Order</item>
         <item>Settings</item>
+        <item>My Orders</item>
     </string-array>
     <string-array name="app_home_menu_items">
         <item>Login</item>

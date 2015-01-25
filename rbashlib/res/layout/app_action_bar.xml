@@ -11,9 +11,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent" 
+                android:padding="5dp">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/app_header_button_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

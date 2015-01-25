@@ -118,16 +118,19 @@ public class ChooseItemsActivity extends FragmentActivity {
 		Fragment fragment = null;
 
 		if (selectedItem.compareTo("Login") == 0) {
-			//Intent intent = new Intent(MainActivity.this,OrdersListActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(thisActivity,LoginAppActivity.class);
+			startActivity(intent);
 		} else if (selectedItem.compareTo("Cancel This Order") == 0) {
 			//Intent intent = new Intent(MainActivity.this,CustomersListActivity.class);
 			//startActivity(intent);
 		}else if (selectedItem.contains("Current Order")) {
-			//Intent intent = new Intent(MainActivity.this,CustomersListActivity.class);
-			//startActivity(intent);
+			Intent intent = new Intent(thisActivity,YourOrderActivity.class);
+			startActivity(intent);
 		}else if (selectedItem.compareTo("Settings") == 0) {
-			Intent intent = new Intent(ChooseItemsActivity.this,AccountSettingsActivity.class);
+			Intent intent = new Intent(thisActivity,AccountSettingsActivity.class);
+			startActivity(intent);
+		}else if (selectedItem.compareTo("My Orders") == 0) {
+			Intent intent = new Intent(thisActivity,MyOrdersActivity.class);
 			startActivity(intent);
 		}
 
