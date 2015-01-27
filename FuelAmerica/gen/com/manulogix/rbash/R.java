@@ -40,6 +40,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int list_row_hover_end_color=0x7f040012;
         public static final int list_row_hover_start_color=0x7f040011;
         public static final int list_row_start_color=0x7f04000f;
+        public static final int orders_ash=0x7f040014;
+        /**  Your Orders 
+         */
+        public static final int orders_blue=0x7f040013;
         public static final int owner_orange_dark=0x7f040009;
         public static final int owner_violet_bkgrnd=0x7f040006;
         public static final int owner_violet_bkgrnd_dark=0x7f040008;
@@ -76,15 +80,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int list_row_bg_hover=0x7f02000b;
         public static final int list_row_selector=0x7f02000c;
         public static final int rbash_small=0x7f02000d;
+        public static final int style_your_order_list_item=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0057;
-        public static final int activity_header_content_title=0x7f0a0054;
+        public static final int action_settings=0x7f0a005d;
+        public static final int activity_header_content_title=0x7f0a005a;
         public static final int activity_header_menu_content_title=0x7f0a001d;
         public static final int activity_main_content_fragment=0x7f0a000b;
         public static final int activity_main_content_title=0x7f0a0009;
-        public static final int app_header_button_back=0x7f0a0035;
-        public static final int app_header_title=0x7f0a0036;
+        public static final int app_header_button_back=0x7f0a003e;
+        public static final int app_header_title=0x7f0a003f;
         public static final int app_home_acc_setting=0x7f0a001b;
         public static final int app_home_add_tip=0x7f0a001a;
         public static final int app_home_my_profile=0x7f0a001c;
@@ -93,7 +98,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int app_home_pay_success=0x7f0a0019;
         public static final int body=0x7f0a0001;
         public static final int button_cart=0x7f0a000a;
-        public static final int button_header_logout=0x7f0a0055;
+        public static final int button_header_logout=0x7f0a005b;
         public static final int button_menu=0x7f0a0008;
         public static final int button_olist_accepted=0x7f0a002d;
         public static final int button_olist_all=0x7f0a002b;
@@ -111,14 +116,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int cla_table_header_phone=0x7f0a0031;
         public static final int cla_table_header_spent=0x7f0a0011;
         public static final int cla_table_header_total=0x7f0a0022;
-        public static final int dialog_cancel=0x7f0a0043;
+        public static final int dialog_cancel=0x7f0a004c;
         public static final int dialog_change_password=0x7f0a0029;
-        public static final int dialog_done=0x7f0a0045;
+        public static final int dialog_done=0x7f0a004e;
         public static final int dialog_save=0x7f0a002a;
-        public static final int dialog_submit=0x7f0a0044;
-        public static final int dialog_success=0x7f0a0048;
+        public static final int dialog_submit=0x7f0a004d;
+        public static final int dialog_success=0x7f0a004f;
         public static final int editText1=0x7f0a0023;
-        public static final int editText2=0x7f0a0042;
+        public static final int editText2=0x7f0a004b;
         public static final int editText3=0x7f0a0024;
         public static final int editText4=0x7f0a0026;
         public static final int editText5=0x7f0a0028;
@@ -127,45 +132,51 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ibutton_back=0x7f0a000d;
         public static final int imageButton2=0x7f0a002f;
         public static final int imageView1=0x7f0a0002;
-        public static final int imageView2=0x7f0a003f;
-        public static final int imageView3=0x7f0a0040;
-        public static final int imageView4=0x7f0a0041;
+        public static final int imageView2=0x7f0a0048;
+        public static final int imageView3=0x7f0a0049;
+        public static final int imageView4=0x7f0a004a;
         public static final int img_welcome_screen=0x7f0a0034;
-        public static final int layout_footer_image=0x7f0a0051;
-        public static final int layout_footer_image_right=0x7f0a0052;
-        public static final int layout_head_image=0x7f0a0053;
-        public static final int linearLayout1=0x7f0a0049;
-        public static final int list=0x7f0a004a;
-        public static final int list_item_count=0x7f0a003a;
-        public static final int list_item_subject=0x7f0a003c;
-        public static final int list_item_subject_cost=0x7f0a003e;
-        public static final int list_item_subject_cost_ll=0x7f0a003d;
-        public static final int list_item_subject_text_ll=0x7f0a003b;
-        public static final int list_item_title=0x7f0a0038;
-        public static final int list_item_title_text_ll=0x7f0a0037;
-        public static final int list_item_total_count_ll=0x7f0a0039;
+        public static final int layout_footer_image=0x7f0a0057;
+        public static final int layout_footer_image_right=0x7f0a0058;
+        public static final int layout_head_image=0x7f0a0059;
+        public static final int linearLayout1=0x7f0a0050;
+        public static final int list=0x7f0a0035;
+        public static final int list_item_count=0x7f0a0043;
+        public static final int list_item_subject=0x7f0a0045;
+        public static final int list_item_subject_cost=0x7f0a0047;
+        public static final int list_item_subject_cost_ll=0x7f0a0046;
+        public static final int list_item_subject_text_ll=0x7f0a0044;
+        public static final int list_item_title=0x7f0a0041;
+        public static final int list_item_title_text_ll=0x7f0a0040;
+        public static final int list_item_total_count_ll=0x7f0a0042;
         public static final int menu_listview=0x7f0a0007;
         public static final int my_orders_cancelled=0x7f0a001f;
         public static final int my_orders_orders=0x7f0a001e;
         public static final int notification_on_off=0x7f0a0004;
-        public static final int rdetails_header_restaurant_address=0x7f0a004c;
-        public static final int rdetails_header_restaurant_name=0x7f0a004b;
-        public static final int rdetails_header_restaurant_owner_email=0x7f0a004f;
-        public static final int rdetails_header_restaurant_owner_mobile=0x7f0a004e;
-        public static final int rdetails_header_restaurant_owner_name=0x7f0a004d;
-        public static final int rdetails_online_orders=0x7f0a0050;
+        public static final int orders_tax_value=0x7f0a003a;
+        public static final int orders_taxex=0x7f0a0039;
+        public static final int orders_tip=0x7f0a003c;
+        public static final int orders_tip_value=0x7f0a003d;
+        public static final int plus_1=0x7f0a0038;
+        public static final int plus_2=0x7f0a003b;
+        public static final int rdetails_header_restaurant_address=0x7f0a0052;
+        public static final int rdetails_header_restaurant_name=0x7f0a0051;
+        public static final int rdetails_header_restaurant_owner_email=0x7f0a0055;
+        public static final int rdetails_header_restaurant_owner_mobile=0x7f0a0054;
+        public static final int rdetails_header_restaurant_owner_name=0x7f0a0053;
+        public static final int rdetails_online_orders=0x7f0a0056;
         public static final int tableRow1=0x7f0a000e;
         public static final int tableRow2=0x7f0a0014;
         public static final int tableRow3=0x7f0a0015;
         public static final int tableRow4=0x7f0a0016;
-        public static final int table_row_item_tv=0x7f0a0056;
+        public static final int table_row_item_tv=0x7f0a005c;
         public static final int terms_of_service=0x7f0a0005;
         public static final int textView1=0x7f0a0003;
         public static final int textView2=0x7f0a0006;
         public static final int textView3=0x7f0a0025;
         public static final int textView4=0x7f0a0027;
-        public static final int textView5=0x7f0a0046;
-        public static final int textView6=0x7f0a0047;
+        public static final int textView5=0x7f0a0036;
+        public static final int textView6=0x7f0a0037;
     }
     public static final class layout {
         public static final int activity_account_settings=0x7f030000;
@@ -195,6 +206,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rbash_footer=0x7f030018;
         public static final int rbash_title_bar=0x7f030019;
         public static final int table_row_item=0x7f03001a;
+        public static final int your_order_items_list_item=0x7f03001b;
     }
     public static final class menu {
         public static final int account_settings=0x7f090000;

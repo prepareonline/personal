@@ -22,4 +22,8 @@
     <color name="list_row_hover_start_color">#ebeef0</color>
     <color name="list_row_hover_end_color">#ebeef0</color>
 
+    <!-- Your Orders -->
+    <color name="orders_blue">#819FF7</color>
+    <color name="orders_ash">#BDBDBD</color>
+
 </resources>
